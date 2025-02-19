@@ -42,13 +42,6 @@ const Experience = () => {
           </ul>
         </div>
 
-        <div className="job">
-          <h4>Web Dev Intern</h4>
-          <p>Hezemon Solutions | March 2020 – Aug 2020 | Hyderabad, India</p>
-          <ul>
-            <li>Developed a project "Corporate Leave Management" using various programming languages.</li>
-          </ul>
-        </div>
       
     </section>
   );
