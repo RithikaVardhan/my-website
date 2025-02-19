@@ -1,0 +1,67 @@
+body {
+  background-color: #001f3f; /* Dark blue background */
+  margin: 0;
+  font-family: Verdana, sans-serif; /* Set Verdana as the default font */
+}
+
+/* Contact section styling */
+#contact {
+  padding: 100px 20px; /* Increase top padding */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh; /* Ensure enough height */
+  margin-top: 150px; /* Push it down further */
+}
+
+
+/* Title styling for 'Contact Me' */
+h5.text-dark {
+  font-size: 3em; /* Increase font size */
+  color: #ADD8E6; /* Light blue color */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Contact container styling for transparent box (only contact details) */
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Optional: add a blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for contrast */
+}
+
+/* Contact details */
+p {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #ffffff; /* White text */
+}
+
+/* Link styles */
+a {
+  color: #66c2ff; /* Light blue for contrast */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #99ddff;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .text-dark {
+    font-size: 2em; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 1em;
+  }
+}

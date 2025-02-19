@@ -1,0 +1,37 @@
+/* Nav Bar Styles */
+nav {
+    background: rgba(0, 0, 0, 0.3); /* Transparent background */
+    width: max-content; /* Width adjusted to content */
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed;
+    right: 2rem; /* Position the navbar from the right */
+    top: 2rem; /* Position the navbar from the top */
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+  }
+  
+  /* Nav Link Styles */
+  nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.1rem;
+  }
+  
+  /* Hover Effect */
+  nav a:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Active Link Styles */
+  nav a.active {
+    background: var(--color-bg); /* Change background when active */
+    color: var(--color-white); /* Change color when active */
+  }
+  

@@ -1,0 +1,95 @@
+/* Experience Section */
+#experience {
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 200px; /* Ensure space between Experience and Contact */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Title */
+.experience-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ADD8E6;
+  margin-bottom: 20px;
+}
+
+/* Work Experience */
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the job containers */
+  max-width: 900px;  /* Increase max width for wider containers */
+  width: 90%;  /* Allow responsiveness */
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 50px; /* Extra space to prevent overlapping */
+}
+
+/* Work Experience Title */
+.work-experience h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Transparent Box Styling */
+.job {
+  background: rgba(255, 255, 255, 0.1);  /* Light transparent box */
+  backdrop-filter: blur(10px);  /* Blurred glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  margin-bottom: 30px;
+  max-width: 750px;  /* Increase width of the job containers */
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect to slightly lift the box */
+.job:hover {
+  transform: translateY(-5px);
+}
+
+/* Job Title */
+.job h4 {
+  font-size: 1.5rem;
+  color: #ADD8E6;
+  margin-bottom: 10px;
+}
+
+/* Job Subtitle */
+.job p {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.job ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Reset default padding */
+}
+
+.job li {
+  font-size: 1.1rem;
+  color: #ffffff;
+  position: relative;
+  margin-bottom: 10px; /* Adds spacing between bullet points */
+  line-height: 1.5; /* Ensures proper spacing between lines */
+  padding-left: 25px; /* Space for the bullet */
+  text-indent: -25px; /* Aligns second and third lines with first */
+}
+
+.job li::before {
+  content: "◆"; /* Custom bullet */
+  color: #ADD8E6;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0; /* Keep bullet aligned properly */
+  top: 5px;
+}

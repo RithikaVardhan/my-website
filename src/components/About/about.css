@@ -1,0 +1,66 @@
+/* Ensure the background of the website is unaffected */
+body {
+  background-color: #f0f0f0; /* Global background color */
+}
+
+/* About Section Styling */
+#about {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: transparent; /* Keep background transparent */
+}
+
+.about-container {
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+  color: #555; /* Default text color */
+}
+
+.about-title {
+  font-size: 2.5em;
+  font-weight: bold; /* Bold font */
+  color: #ADD8E6; /* Light blue color */
+  margin-bottom: 20px;
+}
+
+/* Bullet point styling */
+.summary {
+  list-style: none; /* Remove default bullets */
+  font-size: 1.2em;
+  line-height: 1.8; /* Increase line spacing */
+  text-align: left;
+  padding: 0 10px;
+  margin-top: 20px;
+  font-style: italic; /* Italic font */
+  color: #FFFFFF; /* White font color */
+}
+
+.summary li {
+  margin-bottom: 15px; /* Adds space between bullet points */
+  position: relative;
+  padding-left: 30px; /* Space for custom icon */
+}
+
+/* Custom bullet symbol */
+.summary li::before {
+  content: "★"; /* Custom symbol (You can change this) */
+  position: absolute;
+  left: 0;
+  color: #ADD8E6; /* Light blue symbol color */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2em;
+  }
+
+  .summary {
+    font-size: 1em;
+    padding: 0 15px;
+  }
+}

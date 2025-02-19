@@ -1,0 +1,121 @@
+/* Huge title styling */
+.main-title {
+    position: absolute;
+    top: 2rem;  /* Adjust the title position */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem; /* Huge text */
+    font-weight: bold;
+    color: #ADD8E6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    z-index: 10;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .main-title {
+        font-size: 3rem; /* Adjust size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 2.5rem;
+        top: 1.5rem;
+    }
+}
+
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjusted header container */
+.header__container {
+    text-align: left; /* Aligns text to the left */
+    height: 100%;
+    position: relative;
+    padding-left: 50px; /* Adds space from the left */
+    max-width: 800px;
+}
+
+/* Call-to-action buttons */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: flex-start; /* Align buttons to the left */
+}
+
+/* Social links */
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+
+.header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* Profile image */
+.me {
+    background: var(--color-primary);
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 4rem;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the circular shape is maintained */
+}
+
+/* Scroll down text */
+.scroll__down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+    
+    .header__container {
+        padding-left: 30px; /* Adjust spacing for smaller screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+
+    .header__container {
+        padding-left: 20px; /* Adjust spacing for very small screens */
+    }
+}

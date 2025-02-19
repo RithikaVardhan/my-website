@@ -1,0 +1,28 @@
+.cta {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-primary {
+    background-color: #28a745;
+  }
+  
+  .btn-primary:hover {
+    background-color: #1e7e34;
+  }
+  

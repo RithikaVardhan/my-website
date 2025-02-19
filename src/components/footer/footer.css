@@ -1,0 +1,29 @@
+footer {
+  background-color: #001f3f; /* Dark blue background */
+  padding: 20px 0;
+  text-align: center;
+  color: white; /* White text */
+  margin-top: 100px;  /* Added margin-top to separate footer from above content */
+}
+
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .gratitude-message {
+    font-size: 2em; /* Increased font size */
+    color: #ADD8E6; /* Light blue color */
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 600px) {
+    .gratitude-message {
+      font-size: 1.5em; /* Slightly smaller text for small screens */
+    }
+  }
+  
